@@ -1,0 +1,344 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "q01",
+                          "category":  "Pengenalan",
+                          "type":  "mcq",
+                          "question":  "Bagian multimeter analog yang berfungsi mengatur posisi jarum tepat di angka nol sebelah kiri sebelum mengukur tegangan/arus disebut...",
+                          "choices":  [
+                                          "Zero Ohm Adjuster",
+                                          "Calibrating Knob (Sekrup Kalibrasi)",
+                                          "Selection Area",
+                                          "Common Port"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Sekrup kalibrasi (Calibrating Knob) diputar memakai obeng untuk menepatkan jarum di angka nol sebelah kiri sebelum mengukur tegangan atau arus."
+                      },
+                      {
+                          "id":  "q02",
+                          "category":  "Pengenalan",
+                          "type":  "mcq",
+                          "question":  "Tombol putar yang khusus dipakai untuk mengalibrasi jarum tepat di angka nol sebelah KANAN saat mengukur hambatan disebut...",
+                          "choices":  [
+                                          "Calibrating Knob",
+                                          "Selection Area",
+                                          "Zero Ohm Adjuster",
+                                          "Pointer"
+                                      ],
+                          "answerIndex":  2,
+                          "explanation":  "Zero Ohm Adjuster digunakan khusus pada mode Ohm, untuk menepatkan jarum di angka nol sebelah kanan skala."
+                      },
+                      {
+                          "id":  "q03",
+                          "category":  "Tegangan DC",
+                          "type":  "mcq",
+                          "question":  "Saat mengukur tegangan DC pada baterai, bagaimana cara menghubungkan kedua probe?",
+                          "choices":  [
+                                          "Seri dengan rangkaian",
+                                          "Paralel ke kutub baterai, merah ke positif dan hitam ke negatif",
+                                          "Probe dibalik, merah ke negatif",
+                                          "Hanya probe merah yang disentuhkan"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Pengukuran tegangan selalu dilakukan secara paralel terhadap sumber: probe merah ke kutub positif, probe hitam ke kutub negatif."
+                      },
+                      {
+                          "id":  "q04",
+                          "category":  "Tegangan DC",
+                          "type":  "mcq",
+                          "question":  "Jika kamu belum tahu perkiraan besar tegangan yang akan diukur, batas ukur (range) apa yang sebaiknya dipilih lebih dulu?",
+                          "choices":  [
+                                          "Batas ukur terkecil",
+                                          "Batas ukur maksimum, lalu diturunkan bertahap",
+                                          "Batas ukur Ohm",
+                                          "Tidak perlu memilih batas ukur"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Memilih batas ukur maksimum dulu mencegah jarum mentok (rusak) akibat tegangan yang ternyata lebih besar dari perkiraan."
+                      },
+                      {
+                          "id":  "q05",
+                          "category":  "Tegangan AC",
+                          "type":  "mcq",
+                          "question":  "Untuk mengukur tegangan listrik rumah tangga (PLN) yang berbahaya, batas ukur ACV yang aman dipakai pada animasi adalah...",
+                          "choices":  [
+                                          "10V",
+                                          "50V",
+                                          "250V",
+                                          "1000V"
+                                      ],
+                          "answerIndex":  2,
+                          "explanation":  "Range 250V dipilih agar cukup tinggi untuk mengukur tegangan PLN sekitar 220V dengan aman dan terbaca jelas pada skala."
+                      },
+                      {
+                          "id":  "q06",
+                          "category":  "Tegangan AC",
+                          "type":  "mcq",
+                          "question":  "Saat mengukur tegangan AC, probe dimasukkan ke mana?",
+                          "choices":  [
+                                          "Diseri dengan beban lampu",
+                                          "Langsung ke lubang stop kontak",
+                                          "Ke kaki resistor",
+                                          "Ke terminal saklar"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Untuk mengukur tegangan AC dari stop kontak, kedua probe dimasukkan langsung ke lubang stop kontak (paralel terhadap sumber)."
+                      },
+                      {
+                          "id":  "q07",
+                          "category":  "Arus DC",
+                          "type":  "mcq",
+                          "question":  "Bagaimana cara menghubungkan multimeter saat mengukur arus DC (Ampere)?",
+                          "choices":  [
+                                          "Paralel terhadap sumber tegangan",
+                                          "Seri dengan rangkaian/beban",
+                                          "Langsung ke stop kontak",
+                                          "Tidak perlu disambung ke rangkaian"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Pengukuran arus mengharuskan multimeter dipasang seri, menjadi bagian dari jalur arus yang mengalir ke beban."
+                      },
+                      {
+                          "id":  "q08",
+                          "category":  "Resistansi",
+                          "type":  "mcq",
+                          "question":  "Sebelum menempelkan probe ke resistor, langkah kalibrasi nol ohm dilakukan dengan cara...",
+                          "choices":  [
+                                          "Menempelkan probe merah dan hitam langsung satu sama lain, lalu memutar Zero Ohm Adjuster",
+                                          "Memutar Calibrating Knob menggunakan obeng",
+                                          "Menghubungkan probe ke stop kontak",
+                                          "Memasang resistor dahulu baru menyalakan alat"
+                                      ],
+                          "answerIndex":  0,
+                          "explanation":  "Kalibrasi nol ohm: tempelkan kedua ujung probe, lalu putar Zero Ohm Adjuster sampai jarum tepat di angka 0 ujung kanan skala."
+                      },
+                      {
+                          "id":  "q09",
+                          "category":  "Resistansi",
+                          "type":  "mcq",
+                          "question":  "Jarum menunjuk angka 5 pada skala Ohm, dan selektor pengali berada di posisi x100. Berapa nilai resistor tersebut?",
+                          "choices":  [
+                                          "5 Ohm",
+                                          "50 Ohm",
+                                          "500 Ohm",
+                                          "5000 Ohm"
+                                      ],
+                          "answerIndex":  2,
+                          "explanation":  "Nilai = angka skala x faktor pengali = 5 x 100 = 500 Ohm."
+                      },
+                      {
+                          "id":  "q10",
+                          "category":  "Resistansi",
+                          "type":  "calc",
+                          "question":  "Jarum menunjuk angka 22 pada skala Ohm, pengali x10. Berapa Ohm nilai resistor itu? (isi angka saja)",
+                          "answer":  220,
+                          "tolerance":  0,
+                          "explanation":  "22 x 10 = 220 Ohm."
+                      },
+                      {
+                          "id":  "q11",
+                          "category":  "Kontinuitas",
+                          "type":  "mcq",
+                          "question":  "Apa fungsi pengetesan kontinuitas pada multimeter?",
+                          "choices":  [
+                                          "Mengukur tegangan baterai",
+                                          "Menguji apakah jalur listrik terhubung atau terputus",
+                                          "Mengukur arus AC",
+                                          "Mengisi ulang baterai multimeter"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Mode kontinuitas (simbol buzzer) dipakai untuk menguji jalur listrik, misalnya pada saklar, terhubung baik atau terputus."
+                      },
+                      {
+                          "id":  "q12",
+                          "category":  "Kontinuitas",
+                          "type":  "mcq",
+                          "question":  "Pada posisi saklar OFF, apa yang seharusnya terjadi saat dites kontinuitas?",
+                          "choices":  [
+                                          "Multimeter berbunyi beep",
+                                          "Multimeter tidak mengeluarkan suara",
+                                          "Jarum bergerak penuh",
+                                          "LCD menunjukkan tegangan 220V"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Saklar OFF berarti jalur terputus, sehingga multimeter seharusnya tidak berbunyi sama sekali."
+                      },
+                      {
+                          "id":  "q13",
+                          "category":  "Kontinuitas",
+                          "type":  "mcq",
+                          "question":  "Pada posisi saklar ON dan jalur berfungsi baik, apa yang akan terjadi?",
+                          "choices":  [
+                                          "Tidak ada reaksi",
+                                          "Multimeter mengeluarkan suara alarm (beep)",
+                                          "Jarum kembali ke nol",
+                                          "LCD mati"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Saklar ON pada jalur yang baik akan membuat multimeter berbunyi beep, menandakan arus mengalir lancar."
+                      },
+                      {
+                          "id":  "q14",
+                          "category":  "Port \u0026 Probe",
+                          "type":  "mcq",
+                          "question":  "Probe hitam (negatif) selalu dihubungkan ke port...",
+                          "choices":  [
+                                          "VÎ©mA",
+                                          "Common (COM)",
+                                          "Ohm saja",
+                                          "Tidak perlu dihubungkan"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Probe hitam selalu masuk ke port Common (COM), berapapun mode pengukurannya."
+                      },
+                      {
+                          "id":  "q15",
+                          "category":  "Tegangan DC",
+                          "type":  "mcq",
+                          "question":  "Mengapa jarum harus dikalibrasi di angka nol sebelum mengukur tegangan/arus DC?",
+                          "choices":  [
+                                          "Agar hasil ukur tidak bias dan pembacaan akurat",
+                                          "Agar baterai multimeter tidak boros",
+                                          "Karena wajib menurut hukum",
+                                          "Tidak ada alasan khusus"
+                                      ],
+                          "answerIndex":  0,
+                          "explanation":  "Kalibrasi nol memastikan jarum benar-benar mulai dari titik referensi yang tepat, sehingga pembacaan hasil ukur akurat."
+                      },
+                      {
+                          "id":  "q16",
+                          "category":  "Resistansi",
+                          "type":  "mcq",
+                          "question":  "Mengapa kalibrasi nol ohm harus diulang setiap kali mengganti faktor pengali (x1, x10, x100, dst)?",
+                          "choices":  [
+                                          "Karena tidak perlu diulang",
+                                          "Karena resistansi internal rangkaian pengali berbeda di setiap posisi, sehingga titik nol bisa bergeser",
+                                          "Karena baterai multimeter berubah warna",
+                                          "Hanya formalitas tanpa efek nyata"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Setiap posisi pengali menggunakan rangkaian internal berbeda, sehingga titik nol ohm perlu dikalibrasi ulang agar akurat."
+                      },
+                      {
+                          "id":  "q17",
+                          "category":  "Keselamatan",
+                          "type":  "mcq",
+                          "question":  "Apa risiko jika salah memilih mode (misalnya selektor di posisi Ohm) saat probe disentuhkan ke tegangan AC PLN?",
+                          "choices":  [
+                                          "Tidak ada risiko sama sekali",
+                                          "Dapat merusak multimeter dan berbahaya bagi pengguna",
+                                          "Hasil ukur otomatis benar",
+                                          "Multimeter akan kalibrasi otomatis"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Memilih mode yang salah saat mengukur tegangan tinggi dapat merusak alat ukur dan membahayakan keselamatan pengguna."
+                      },
+                      {
+                          "id":  "q18",
+                          "category":  "Arus DC",
+                          "type":  "mcq",
+                          "question":  "Pada pengukuran arus DC, batas ukur dipilih misalnya 250 mA. Apa yang terjadi bila arus sebenarnya melebihi batas ukur tersebut?",
+                          "choices":  [
+                                          "Jarum berhenti tepat di ujung skala dengan aman",
+                                          "Jarum dapat mentok berlebihan (over-range) dan berisiko merusak meter",
+                                          "Multimeter otomatis pindah ke range lebih tinggi",
+                                          "Tidak berpengaruh apapun"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Melebihi batas ukur berisiko membuat jarum mentok berlebihan (over-range), yang dapat merusak mekanisme multimeter analog."
+                      },
+                      {
+                          "id":  "q19",
+                          "category":  "Pengenalan",
+                          "type":  "mcq",
+                          "question":  "Apa nama bagian yang menunjukkan hasil pengukuran dengan menggerakkan jarum di sepanjang garis-garis angka pada multimeter analog?",
+                          "choices":  [
+                                          "Selector Area",
+                                          "Skala Multimeter (bersama Jarum Penunjuk)",
+                                          "Zero Ohm Adjuster",
+                                          "Probe"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Skala multimeter berisi garis-garis angka, dan jarum penunjuk bergerak di atasnya untuk menunjukkan hasil ukur."
+                      },
+                      {
+                          "id":  "q20",
+                          "category":  "Resistansi",
+                          "type":  "calc",
+                          "question":  "Jarum menunjuk angka 47 pada skala Ohm, pengali x1000. Berapa Ohm nilai resistor itu? (isi angka saja)",
+                          "answer":  47000,
+                          "tolerance":  0,
+                          "explanation":  "47 x 1000 = 47.000 Ohm (47 kOhm)."
+                      },
+                      {
+                          "id":  "q21",
+                          "category":  "Port \u0026 Probe",
+                          "type":  "mcq",
+                          "question":  "Pada multimeter digital, probe merah harus dipasang ke port...",
+                          "choices":  [
+                                          "COM",
+                                          "VΩmA",
+                                          "OHM",
+                                          "ACV"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Probe merah selalu masuk ke port VΩmA untuk mengukur tegangan, arus, resistansi, dan kontinuitas."
+                      },
+                      {
+                          "id":  "q22",
+                          "category":  "Multimeter Digital",
+                          "type":  "mcq",
+                          "question":  "Apa keuntungan utama multimeter digital dibanding analog dalam hal pemilihan range?",
+                          "choices":  [
+                                          "Perlu kalibrasi nol setiap kali",
+                                          "Auto-ranging otomatis memilih batas ukur",
+                                          "Tidak bisa mengukur arus",
+                                          "Harus membaca skala manual"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Multimeter digital auto-ranging secara otomatis memilih batas ukur yang tepat, sehingga pengguna tidak perlu mengubahnya manual."
+                      },
+                      {
+                          "id":  "q23",
+                          "category":  "Multimeter Digital",
+                          "type":  "mcq",
+                          "question":  "Apakah multimeter digital perlu dikalibrasi jarum nol sebelum membaca tegangan?",
+                          "choices":  [
+                                          "Ya, selalu perlu",
+                                          "Hanya pada mode Ohm",
+                                          "Tidak, tidak perlu kalibrasi nol jarum",
+                                          "Hanya jika baterainya lemah"
+                                      ],
+                          "answerIndex":  2,
+                          "explanation":  "Multimeter digital menampilkan angka langsung tanpa jarum, sehingga tidak perlu kalibrasi nol jarum seperti multimeter analog."
+                      },
+                      {
+                          "id":  "q24",
+                          "category":  "Sakelar Selektor",
+                          "type":  "mcq",
+                          "question":  "Bagian multimeter yang digunakan untuk memilih jenis pengukuran dan batas ukur disebut...",
+                          "choices":  [
+                                          "Selection Area",
+                                          "Probe Port",
+                                          "Zero Ohm Adjuster",
+                                          "Calibrating Knob"
+                                      ],
+                          "answerIndex":  0,
+                          "explanation":  "Sakelar selektor (Selection Area) adalah bagian putar yang memilih mode pengukuran dan batas ukur yang diinginkan."
+                      },
+                      {
+                          "id":  "q25",
+                          "category":  "Kontinuitas",
+                          "type":  "mcq",
+                          "question":  "Apa arti bunyi beep saat mode kontinuitas diuji pada saklar ON?",
+                          "choices":  [
+                                          "Jalur listrik terputus",
+                                          "Jalur listrik terhubung baik",
+                                          "Baterai habis",
+                                          "Mode salah pilih"
+                                      ],
+                          "answerIndex":  1,
+                          "explanation":  "Bunyi beep menandakan jalur listrik terhubung dengan baik dan kontinuitas ada."
+                      }
+                  ]
+}
