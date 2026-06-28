@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latihan & Kuis — Virtual Measurement Lab</title>
+<link rel="icon" href="../assets/images/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+  .page-head{ padding:36px 0 24px; }
+  .quiz-section{ padding-bottom:60px; }
+  .quiz-grid{ display:grid; gap:20px; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+  .quiz-card{ min-height:260px; padding: 0; }
+  .quiz-card .kicker{ margin:0; }
+  .quiz-inner{ display:flex; flex-direction:column; gap:18px; }
+  .quiz-header{ display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+  .quiz-header h2{ margin:0; font-size:24px; }
+  .quiz-panel{ padding:24px; }
+  .quiz-progress{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+  .quiz-progress span{ width:12px; height:12px; border-radius:50%; background: var(--hairline); }
+  .quiz-progress span.done{ background: var(--trace-green); }
+  .quiz-result{ padding:24px; display:flex; flex-direction:column; gap:18px; }
+  .quiz-result svg{ width:100%; height:160px; }
+  .quiz-actions{ display:flex; justify-content:flex-end; }
+  .quiz-actions .btn{ margin-top:10px; }
+  .sidebar-card{ padding:24px; display:flex; flex-direction:column; gap:16px; }
+  .sidebar-card ol{ margin:0; padding-left:18px; color: var(--ink-muted); font-size:13.5px; line-height:1.8; }
+  .sidebar-card li{ margin-bottom:10px; }
+  .quiz-result[hidden]{ display:none; }
+  @media (max-width: 900px){ .quiz-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">VM</div>
+      <div class="brand-text">
+        <span class="school">SMK Cokroaminoto 2 Banjarnegara</span>
+        <span class="lab">Virtual Measurement Lab</span>
+      </div>
+    </div>
+    <nav class="topnav">
+      <a href="../index.html">Beranda</a>
+      <a href="../dashboard.html">Dashboard</a>
+      <a href="digital-multimeter.html">Multimeter Digital</a>
+      <a href="analog-multimeter.html">Multimeter Analog</a>
+      <a href="practice.html">Latihan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head container">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+        <div>
+          <span class="kicker">Latihan & Kuis</span>
+          <h1 style="font-size:28px;">Latihan Pengukuran & Prosedur Multimeter</h1>
+          <p style="color:var(--ink-muted);max-width:64ch;">Kerjakan soal kuis tentang penggunaan multimeter digital dan analog, port probe, pemilihan mode, kalibrasi, serta perhitungan resistansi. Halaman ini memuat latihan sesuai fungsi aplikasi dan panduan langkah demi langkah.</p>
+        </div>
+        <a class="btn ghost" href="../index.html">Kembali ke Beranda</a>
+      </div>
+    </section>
+
+    <section class="quiz-section container">
+      <div class="quiz-grid">
+        <div class="card quiz-card">
+          <div class="quiz-panel">
+            <div class="quiz-inner" id="quizApp">
+              <div class="quiz-header">
+                <div>
+                  <span class="kicker">Kuis Praktik</span>
+                  <h2>Uji Pemahamanmu</h2>
+                </div>
+                <div id="quizScore">Skor: 0/0</div>
+              </div>
+
+              <div id="quizPlay">
+                <div id="quizProgress" class="quiz-progress"></div>
+                <div id="quizCard"></div>
+                <div class="quiz-actions">
+                  <button class="btn primary" id="quizRestart">Muat Ulang Kuis</button>
+                </div>
+              </div>
+
+              <div id="quizResult" class="quiz-result" hidden>
+                <div class="banner ok">Hasil akan tampil setelah semua soal dijawab.</div>
+                <div>
+                  <strong>Ringkasan:</strong>
+                  <p id="resultSummary" style="margin:8px 0 0; color: var(--ink-muted);"></p>
+                </div>
+                <svg id="scoreGauge" viewBox="0 0 200 120" aria-label="Gauge skor"></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card sidebar-card">
+          <span class="kicker">Panduan Kuis</span>
+          <p style="margin:0;color:var(--ink-muted);">Baca setiap soal dengan teliti. Gunakan pengetahuan tentang port probe, cara sambung alat, kalibrasi, dan pembacaan nilai resistansi untuk menjawab soal dengan benar.</p>
+          <ol>
+            <li>Jawab satu soal setiap kali.</li>
+            <li>Untuk soal pilihan ganda, pilih jawaban yang paling tepat.</li>
+            <li>Untuk soal perhitungan, masukkan angka sesuai satuan yang diminta.</li>
+            <li>Kamu dapat mengulang kuis kapan saja dengan tombol di bawah.</li>
+          </ol>
+          <div class="quiz-actions">
+            <button class="btn ghost" id="quizRestartSidebar">Mulai Ulang Kuis</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitefoot">
+    &copy; <span data-year></span> Virtual Electrical Measurement Laboratory — SMK Cokroaminoto 2 Banjarnegara.
+  </footer>
+</div>
+
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    Quiz.init(document.getElementById('quizApp'), { count: 10 });
+    const restartButtons = document.querySelectorAll('#quizRestart, #quizRestartSidebar');
+    restartButtons.forEach(btn => btn.addEventListener('click', () => {
+      Quiz.init(document.getElementById('quizApp'), { count: 10 });
+    }));
+  });
+</script>
+</body>
+</html>

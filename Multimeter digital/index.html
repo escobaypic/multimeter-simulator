@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Electrical Measurement Laboratory — SMK Cokroaminoto 2 Banjarnegara</title>
+<link rel="icon" href="assets/images/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .hero{ padding: 64px 0 40px; }
+  .hero-grid{ display:grid; grid-template-columns: 1.1fr .9fr; gap:40px; align-items:center; }
+  @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; } }
+  .hero h1{ font-size: clamp(34px,5vw,56px); line-height:1.04; margin:14px 0 18px; }
+  .hero h1 span{ color: var(--trace-green); }
+  .hero p.lede{ color: var(--ink-muted); font-size:16px; max-width:46ch; margin-bottom:26px; }
+  .hero-actions{ display:flex; gap:12px; flex-wrap:wrap; }
+
+  .demo-panel{ padding:26px; position:relative; }
+  .mini-lcd{ background:#0b0f0c; border-radius:10px; padding:18px; box-shadow: inset 0 0 16px rgba(0,0,0,.7); }
+  .mini-readout{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .mini-caption{ font-family: var(--font-mono); font-size:11px; color: var(--ink-faint); margin-top:14px; }
+
+  .feature-row{ padding: 10px 0 70px; }
+  .feature-card{ padding:24px; }
+  .feature-card .icon{ width:38px; height:38px; border-radius:10px; background: var(--panel-raised); border:1px solid var(--hairline); display:flex; align-items:center; justify-content:center; margin-bottom:14px; color: var(--trace-green); font-family: var(--font-mono); font-weight:700; }
+  .feature-card h3{ font-family: var(--font-body); text-transform:none; letter-spacing:0; font-size:16px; font-weight:700; margin-bottom:6px; }
+  .feature-card p{ color: var(--ink-muted); font-size:13.5px; margin:0; }
+
+  .compare-row{ padding-bottom:70px; }
+  .compare-card{ padding:24px; }
+  .compare-card .tape-label{ margin-bottom:12px; }
+  .compare-card ul{ margin:14px 0 0; padding-left:18px; color: var(--ink-muted); font-size:13.5px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">VM</div>
+      <div class="brand-text">
+        <span class="school">SMK Cokroaminoto 2 Banjarnegara</span>
+        <span class="lab">Virtual Measurement Lab</span>
+      </div>
+    </div>
+    <nav class="topnav">
+      <a href="index.html">Beranda</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="simulator/digital-multimeter.html">Multimeter Digital</a>
+      <a href="simulator/analog-multimeter.html">Multimeter Analog</a>
+      <a href="simulator/practice.html">Latihan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div>
+          <span class="tape-label">Lab Pengukuran Listrik &middot; Virtual</span>
+          <h1>Kenali multimeter sebelum menyentuh <span>yang sungguhan.</span></h1>
+          <p class="lede">Latihan mengukur tegangan, arus, resistansi, dan kontinuitas — lengkap dengan prosedur kalibrasi yang benar — di multimeter digital maupun analog, tanpa risiko alat rusak atau tersengat listrik.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="dashboard.html">Masuk ke Lab &rarr;</a>
+            <a class="btn ghost" href="simulator/practice.html">Coba Kuis Dulu</a>
+          </div>
+        </div>
+
+        <div class="card demo-panel">
+          <span class="kicker">Pratinjau Layar</span>
+          <div class="mini-lcd">
+            <div class="mini-readout">
+              <span class="mono" style="font-size:38px;color:var(--trace-green);text-shadow:0 0 10px var(--trace-green);">225.4</span>
+              <span class="mono" style="font-size:13px;color:var(--trace-green);">V AC</span>
+            </div>
+          </div>
+          <p class="mini-caption">Contoh pembacaan tegangan stop kontak rumah pada batas ukur 250V.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-row container">
+      <span class="kicker">Yang Bisa Dipelajari</span>
+      <h2 style="font-size:26px;margin-bottom:20px;">Empat Cara Ukur, Satu Alat</h2>
+      <div class="grid cols-3">
+        <div class="card feature-card">
+          <div class="icon">V&#8202;&#9213;</div>
+          <h3>Tegangan DC &amp; AC</h3>
+          <p>Pasang probe secara paralel, pilih batas ukur yang aman, lalu baca hasilnya — dari baterai 1,5V hingga stop kontak 220V.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="icon">A</div>
+          <h3>Arus DC (Seri)</h3>
+          <p>Sisipkan multimeter ke dalam jalur rangkaian untuk membaca arus yang mengalir ke beban seperti LED atau motor DC.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="icon">&Omega;</div>
+          <h3>Resistansi &amp; Kontinuitas</h3>
+          <p>Kalibrasi nol ohm, kalikan jarum dengan faktor pengali, dan uji jalur saklar dengan suara buzzer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare-row container">
+      <span class="kicker">Dua Karakter, Satu Pelajaran</span>
+      <div class="grid cols-2">
+        <div class="card compare-card">
+          <span class="tape-label" style="background:var(--case-digital);color:#1c1f17;">Multimeter Digital</span>
+          <p style="color:var(--ink-muted);font-size:13.5px;margin:0;">Auto-ranging, layar LCD langsung menampilkan angka. Cocok untuk memahami <em>port &amp; cara sambung</em> yang benar tanpa kerumitan kalibrasi manual.</p>
+          <ul>
+            <li>Probe merah &rarr; VΩmA, hitam &rarr; COM</li>
+            <li>Tidak perlu kalibrasi jarum</li>
+            <li>Pembacaan langsung dalam angka digital</li>
+          </ul>
+        </div>
+        <div class="card compare-card">
+          <span class="tape-label" style="background:var(--case-analog);color:#fff;">Multimeter Analog</span>
+          <p style="color:var(--ink-muted);font-size:13.5px;margin:0;">Memakai jarum &amp; skala mekanis. Mengajarkan <em>disiplin kalibrasi</em>: nol kiri untuk volt/arus, nol kanan (Zero Ohm Adjuster) untuk resistansi.</p>
+          <ul>
+            <li>Sekrup kalibrasi sebelum ukur volt/arus</li>
+            <li>Zero Ohm Adjuster sebelum ukur resistansi</li>
+            <li>Hasil = angka skala &times; faktor pengali</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitefoot">
+    &copy; <span data-year></span> Virtual Electrical Measurement Laboratory — SMK Cokroaminoto 2 Banjarnegara. Dibuat untuk tujuan pembelajaran.
+  </footer>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
